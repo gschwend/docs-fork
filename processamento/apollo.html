@@ -10,14 +10,14 @@
         <meta name="author" content="LIneA team">
       
       
-        <link rel="canonical" href="http://docs.linea.org.br/armazenamento/index.html">
+        <link rel="canonical" href="http://docs.linea.org.br/processamento/apollo.html">
       
       <link rel="icon" href="../images/linea_favicon.png">
       <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.3">
     
     
       
-        <title>Armazenamento - Documentação para Usuários</title>
+        <title>Cluster Apollo (LIneA) - Documentação para Usuários</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lustrefs-hpc" class="md-skip">
+        <a href="#hpe-apollo-2000" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Armazenamento
+              Cluster Apollo (LIneA)
             
           </span>
         </div>
@@ -410,12 +410,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -433,7 +435,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../processamento/index.html">Processamento</a>
+          <a href="index.html">Processamento</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -454,11 +456,162 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../processamento/apollo.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Cluster Apollo (LIneA)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="apollo.html" class="md-nav__link md-nav__link--active">
         Cluster Apollo (LIneA)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-atuais" class="md-nav__link">
+    Características atuais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acesso-ao-no-de-submissao" class="md-nav__link">
+    Acesso ao nó de submissão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slurm" class="md-nav__link">
+    Slurm
+  </a>
+  
+    <nav class="md-nav" aria-label="Slurm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filesystem" class="md-nav__link">
+    Filesystem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#particoes-disponiveis" class="md-nav__link">
+    Partições disponíveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accounts-disponiveis" class="md-nav__link">
+    Accounts disponíveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anatomia-de-um-job" class="md-nav__link">
+    Anatomia de um Job
+  </a>
+  
+    <nav class="md-nav" aria-label="Anatomia de um Job">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#executando-um-job" class="md-nav__link">
+    Executando um Job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#andamento-do-job" class="md-nav__link">
+    Andamento do Job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancelando-um-job" class="md-nav__link">
+    Cancelando um Job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#especificando-recursos" class="md-nav__link">
+    Especificando Recursos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-basicos-do-slurm" class="md-nav__link">
+    Comandos Básicos do Slurm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ambiente-de-execucao" class="md-nav__link">
+    Ambiente de Execução
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variaveis-de-ambiente" class="md-nav__link">
+    Variáveis de ​​ambiente
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerenciamento-de-pacotes-eups" class="md-nav__link">
+    Gerenciamento de pacotes (EUPS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -470,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../processamento/sdu.html" class="md-nav__link">
+      <a href="sdu.html" class="md-nav__link">
         Santos Dumont (LNCC)
       </a>
     </li>
@@ -490,14 +643,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -510,8 +661,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="index.html">Armazenamento</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../armazenamento/index.html">Armazenamento</a>
           
         </div>
       
@@ -672,6 +823,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -680,168 +833,101 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lustrefs-hpc" class="md-nav__link">
-    LustreFS (HPC)
+  <a href="#caracteristicas-atuais" class="md-nav__link">
+    Características atuais
   </a>
-  
-    <nav class="md-nav" aria-label="LustreFS (HPC)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#boas-praticas-de-uso-em-um-sistema-lustre" class="md-nav__link">
-    Boas práticas de uso em um sistema Lustre
-  </a>
-  
-    <nav class="md-nav" aria-label="Boas práticas de uso em um sistema Lustre">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#evite-usar-comandos-que-acessam-metadados-massivamente" class="md-nav__link">
-    Evite usar comandos que acessam metadados massivamente
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#use-o-comando-lustre-lfs" class="md-nav__link">
-    Use o comando Lustre lfs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evite-usar-curingas" class="md-nav__link">
-    Evite usar curingas
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#acesso-somente-leitura" class="md-nav__link">
-    Acesso somente leitura
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evite-ter-um-grande-numero-de-arquivos-em-um-unico-diretorio" class="md-nav__link">
-    Evite ter um grande número de arquivos em um único diretório
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evite-arquivos-pequenos" class="md-nav__link">
-    Evite arquivos pequenos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evite-pequenas-operacoes-repetitivas-de-arquivos" class="md-nav__link">
-    Evite pequenas operações repetitivas de arquivos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evite-varios-processos-abrindo-os-mesmos-arquivos-ao-mesmo-tempo" class="md-nav__link">
-    Evite vários processos abrindo os mesmos arquivos ao mesmo tempo
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operacoes-de-arquivo-atraves-de-processo-pai" class="md-nav__link">
-    Operações de arquivo através de processo pai
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#distribuicao-de-arquivos-striping" class="md-nav__link">
-    Distribuição de arquivos (striping)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evite-instalar-software-no-lustre" class="md-nav__link">
-    Evite instalar software no Lustre
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#quota" class="md-nav__link">
-    Quota
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#area-de-scratch" class="md-nav__link">
-    Área de scratch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comandos-uteis" class="md-nav__link">
-    Comandos úteis
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    Referências
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nas-nfs" class="md-nav__link">
-    NAS (NFS)
+  <a href="#acesso-ao-no-de-submissao" class="md-nav__link">
+    Acesso ao nó de submissão
   </a>
   
-    <nav class="md-nav" aria-label="NAS (NFS)">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slurm" class="md-nav__link">
+    Slurm
+  </a>
+  
+    <nav class="md-nav" aria-label="Slurm">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#home" class="md-nav__link">
-    /home
+  <a href="#filesystem" class="md-nav__link">
+    Filesystem
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#archive" class="md-nav__link">
-    /archive
+  <a href="#particoes-disponiveis" class="md-nav__link">
+    Partições disponíveis
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#process" class="md-nav__link">
-    /process
+  <a href="#accounts-disponiveis" class="md-nav__link">
+    Accounts disponíveis
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#quota_1" class="md-nav__link">
-    Quota
+  <a href="#anatomia-de-um-job" class="md-nav__link">
+    Anatomia de um Job
+  </a>
+  
+    <nav class="md-nav" aria-label="Anatomia de um Job">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#executando-um-job" class="md-nav__link">
+    Executando um Job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#andamento-do-job" class="md-nav__link">
+    Andamento do Job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancelando-um-job" class="md-nav__link">
+    Cancelando um Job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#especificando-recursos" class="md-nav__link">
+    Especificando Recursos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-basicos-do-slurm" class="md-nav__link">
+    Comandos Básicos do Slurm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ambiente-de-execucao" class="md-nav__link">
+    Ambiente de Execução
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variaveis-de-ambiente" class="md-nav__link">
+    Variáveis de ​​ambiente
   </a>
   
 </li>
@@ -850,11 +936,16 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#backup" class="md-nav__link">
-    Backup
+        
+          <li class="md-nav__item">
+  <a href="#gerenciamento-de-pacotes-eups" class="md-nav__link">
+    Gerenciamento de pacotes (EUPS)
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -872,242 +963,251 @@
                 
                   
 
-  <a href="https://github.com/linea-it/docs/edit/dev/docs/armazenamento/index.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/linea-it/docs/edit/dev/docs/processamento/apollo.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>Armazenamento</h1>
-
-<h2 id="lustrefs-hpc">LustreFS (HPC)<a class="headerlink" href="#lustrefs-hpc" title="Permanent link">&para;</a></h2>
-<p>O ambiente do cluster Apollo conta com sistema de arquivos de alta performance <a href="https://www.lustre.org/">Lustre</a> com dois níveis (<em>tiers</em>) de armazenamento, um em SSD com ~70 TB (<em>T0</em>) e outro em HDD com ~500 TB (<em>T1</em>), ambos conectados a uma rede infiniband EDR de 100 Gb/s. Os dois níveis de armazenamento estão disponíveis em <code>/lustre/t0</code> e <code>/lustre/t1</code>. </p>
-<p>Os usuários poderão acessar seu diretório de scratch através da variável de ambiente <code>$SCRATCH</code>, ou acessando o diretório localizado em <code>/lustre/t0/scratch/users/&lt;username&gt;</code>. </p>
-<h3 id="boas-praticas-de-uso-em-um-sistema-lustre">Boas práticas de uso em um sistema <strong>Lustre</strong><a class="headerlink" href="#boas-praticas-de-uso-em-um-sistema-lustre" title="Permanent link">&para;</a></h3>
-<p>Sistemas de arquivos distribuídos como o Lustre são ideais para ambientes HPC e HTC. Nesses ambientes, a carga de trabalho típica consiste em arquivos grandes que precisam ser acessados ​​a partir de muitos nós de computação com largura de banda muito alta e/ou baixa latência. Portanto, esses sistemas de arquivos são muito diferentes dos sistemas de arquivos usados ​​em computadores desktop ou servidores isolados. Embora sejam excelentes no manuseio de arquivos grandes, eles também apresentam fortes limitações ao lidar com arquivos pequenos e padrões de acesso mais comumente encontrados em ambientes corporativos e de desktop. As operações que podem ser extremamente rápidas em um disco local de estação de trabalho podem ser dolorosamente lentas e caras em um sistema de arquivos Lustre, afetando tanto os usuários que executam essas operações quanto, eventualmente, todos os outros usuários. Estas melhores práticas e recomendações têm como objetivo permitir um uso tranquilo do Lustre, minimizando ou evitando operações desnecessárias ou muito caras do sistema de arquivos.
-Evite acessar atributos de arquivos e diretórios</p>
-<p>Acessar informações de metadados, como atributos de arquivo (por exemplo, tipo, propriedade, proteção, tamanho, datas, etc.) no Lustre consome muitos recursos e pode degradar o desempenho do sistema de arquivos, especialmente quando realizado com frequência ou em diretórios com grande quantidade de arquivos. Minimize o uso de chamadas de sistema que acessam ou modificam esses atributos, como <code>stat()</code>, <code>statx()</code>, <code>open()</code>, <code>openat()</code>, etc.</p>
-<p>O mesmo se aplica a comandos como <code>ls -l</code> ou <code>ls --color</code> que fazem uso das chamadas mencionadas acima. Em vez disso, use um simples <code>ls</code> ou <code>ls -l filename</code>.</p>
-<h4 id="evite-usar-comandos-que-acessam-metadados-massivamente">Evite usar comandos que acessam metadados massivamente<a class="headerlink" href="#evite-usar-comandos-que-acessam-metadados-massivamente" title="Permanent link">&para;</a></h4>
-<p>Evite usar comandos como <code>ls -R</code>, <code>find</code>, <code>locate</code>, <code>du</code>, <code>df</code> e similares. Esses comandos percorrem o sistema de arquivos recursivamente e/ou executam operações pesadas de metadados. Eles são muito intensivos no acesso aos metadados do sistema de arquivos e podem degradar gravemente o desempenho geral do sistema de arquivos. Se for absolutamente necessário percorrer o sistema de arquivos recursivamente, use o comando fornecido com o Lustre <code>lfs find</code> em vez de <code>find</code>, por exemplo.</p>
-<h4 id="use-o-comando-lustre-lfs">Use o comando Lustre lfs<a class="headerlink" href="#use-o-comando-lustre-lfs" title="Permanent link">&para;</a></h4>
-<p>Para minimizar o número de chamadas Lustre RPC, sempre que possível use os comandos <code>lfs</code> em vez dos comandos fornecidos pelo sistema:</p>
-<ul>
-<li><code>lfs df</code> =&gt; em vez de <code>df</code> </li>
-<li><code>lfs find</code> =&gt; em vez de <code>find</code></li>
-</ul>
-<h4 id="evite-usar-curingas">Evite usar curingas<a class="headerlink" href="#evite-usar-curingas" title="Permanent link">&para;</a></h4>
-<p>Expandir os curingas exige muitos recursos. A execução de comandos com curingas em um grande número de arquivos pode levar muito tempo e afetar gravemente o desempenho do sistema de arquivos. Em vez de usar curingas, crie uma lista dos arquivos de destino e aplique o comando a cada um desses arquivos.</p>
-<h4 id="acesso-somente-leitura">Acesso somente leitura<a class="headerlink" href="#acesso-somente-leitura" title="Permanent link">&para;</a></h4>
-<p>Sempre que possível, abra os arquivos como somente leitura usando <code>O_RDONLY</code>, além disso, se você não precisar atualizar o tempo de acesso ao arquivo, abra os arquivos como <code>O_RDONLY | O_NOATIME</code>. Se as informações de tempo de acesso forem necessárias durante a execução de E/S paralela, deixe o processo pai abrir os arquivos como <code>O_RDONLY</code> e todas as outras classificações abrirem os mesmos arquivos como <code>O_RDONLY|O_NOATIME</code>.</p>
-<h4 id="evite-ter-um-grande-numero-de-arquivos-em-um-unico-diretorio">Evite ter um grande número de arquivos em um único diretório<a class="headerlink" href="#evite-ter-um-grande-numero-de-arquivos-em-um-unico-diretorio" title="Permanent link">&para;</a></h4>
-<p>Quando um arquivo é acessado, o Lustre bloqueia o diretório pai. Quando muitos arquivos no mesmo diretório devem ser abertos, isso cria contenção. Gravar milhares de arquivos em um único diretório produz uma carga massiva nos servidores de metadados Lustre, geralmente resultando na desativação dos sistemas de arquivos. Acessar um único diretório contendo milhares de arquivos pode causar grande contenção de recursos, degradando o desempenho do sistema de arquivos.</p>
-<p>A alternativa é organizar os dados em vários subdiretórios e dividir os arquivos entre eles. Uma abordagem comum é usar a raiz quadrada do número de arquivos, por exemplo, para 90.000 arquivos a raiz quadrada seria 300, portanto devem ser criados 300 diretórios contendo 300 arquivos cada.</p>
-<h4 id="evite-arquivos-pequenos">Evite arquivos pequenos<a class="headerlink" href="#evite-arquivos-pequenos" title="Permanent link">&para;</a></h4>
-<p>Acessar arquivos pequenos no sistema de arquivos Lustre é muito ineficiente. O tamanho de arquivo recomendado é superior a 1 GB. Reorganize os dados em arquivos grandes ou use formatos de arquivo como <strong>HDF5</strong>. Alternativamente, se o tamanho total dos arquivos for pequeno, como alguns gigabytes, copie os arquivos pequenos para <code>/tmp</code> ou para um diretório temporário local para cada nó de computação no início do trabalho (não se esqueça de transferir e/ou excluir os arquivos no fim). Essa abordagem pode ser combinada com o uso de ferramentas de arquivamento, como <code>tar</code> e armazenar pequenos arquivos em um ou mais tarballs grandes podem ser mantidos no Lustre de maneira mais eficiente. </p>
-<p>Ao ler ou gravar arquivos, o Lustre tem um desempenho muito melhor com tamanhos de buffer grandes (&gt;= 1 MB). É altamente recomendável agregar pequenas operações de leitura e gravação em operações maiores. O buffer coletivo MPI-IO permite E/S agregada.</p>
-<h4 id="evite-pequenas-operacoes-repetitivas-de-arquivos">Evite pequenas operações repetitivas de arquivos<a class="headerlink" href="#evite-pequenas-operacoes-repetitivas-de-arquivos" title="Permanent link">&para;</a></h4>
-<p>Evite realizar pequenas operações de E/S repetitivas, como abrir arquivos frequentemente no modo de acréscimo, gravar pequenas quantidades de dados e fechar o arquivo. Em vez disso, abra o arquivo uma vez, execute todas as operações de E/S e feche.</p>
-<h4 id="evite-varios-processos-abrindo-os-mesmos-arquivos-ao-mesmo-tempo">Evite vários processos abrindo os mesmos arquivos ao mesmo tempo<a class="headerlink" href="#evite-varios-processos-abrindo-os-mesmos-arquivos-ao-mesmo-tempo" title="Permanent link">&para;</a></h4>
-<p>Vários processos abrindo os mesmos arquivos ao mesmo tempo podem criar contenção e erros de abertura de arquivos. Em vez disso, execute a abertura a partir de um único processo (pai), ou abra o arquivo somente leitura para evitar bloqueio, ou implemente a abertura com uma abordagem de tentativa e erro com suspensão em caso de erro.
-Evite acessar a mesma região de arquivo de muitos processos</p>
-<p>Se vários processos acessarem a mesma região de arquivo ao mesmo tempo, o gerenciador de bloqueio distribuído Lustre reforçará a coerência para que todos os clientes vejam resultados consistentes. Ter muitos processos tentando acessar a mesma região de arquivo simultaneamente pode causar degradação no desempenho.</p>
-<p>Neste caso, pode ser preferível: replicar o arquivo, dividir o arquivo, executar as operações de E/S a partir de uma única classificação de processo ou garantir que o acesso simultâneo não ocorrerá. Em qualquer caso, é recomendado manter a quantidade de operações de abertura e bloqueio de arquivos em paralelo tão pequena quanto possível para reduzir a contenção.</p>
-<p>Se vários processos tentarem anexar ao mesmo arquivo, isso acionará o bloqueio e poderá causar grande contenção. Idealmente, apenas um processo deve anexar cada arquivo.</p>
-<h4 id="operacoes-de-arquivo-atraves-de-processo-pai">Operações de arquivo através de processo pai<a class="headerlink" href="#operacoes-de-arquivo-atraves-de-processo-pai" title="Permanent link">&para;</a></h4>
-<p>Ao acessar pequenos arquivos compartilhados em uma tarefa paralela, muitas vezes é mais eficiente executar todas as operações necessárias através do processo pai e, se necessário, transmitir os dados para outras classificações, em vez de acessar os mesmos arquivos de todas as classificações. Da mesma forma, se múltiplas classificações de um trabalho paralelo requerem informações sobre um determinado arquivo, a abordagem mais eficiente é fazer com que o processo pai execute as chamadas necessárias (por exemplo <code>stat()</code>, <code>fstat()</code>, etc) e então transmita as informações para as outras classificações.</p>
-<h4 id="distribuicao-de-arquivos-striping">Distribuição de arquivos (striping)<a class="headerlink" href="#distribuicao-de-arquivos-striping" title="Permanent link">&para;</a></h4>
-<p>No Lustre, arquivos grandes podem ser divididos em segmentos que, por sua vez, podem ser distribuídos automaticamente por vários dispositivos de armazenamento. A distribuição de arquivos é útil para E/S paralela em arquivos grandes. Para que isso funcione, o ponto de montagem em questão aponta para vários dispositivos de armazenamento (OSTs). O comando <code>lfs df</code> pode ser usado para verificar se um determinado ponto de montagem aponta para vários OSTs. Para obter informações de distribuição de arquivos para um determinado arquivo, use:</p>
-<p><code>lfs getstripe filename</code></p>
-<p>A distribuição do arquivo pode ser definida usando o comando <code>lfs setstripe</code>. Se o comando for aplicado a um diretório, ele definirá as configurações de distribuição padrão para arquivos criados nesse diretório. Um subdiretório herda todas as configurações de distribuição de seu diretório pai. Se o comando for aplicado a um arquivo, ele distribuirá esse arquivo pelos OSTs de acordo com as configurações especificadas.</p>
-<p><code>lfs setstripe -s 128m -c 8 filename</code> =&gt; divide o arquivo em segmentos de 128 MB e os distribui em 8 OSTs</p>
-<p>Se um arquivo grande for compartilhado em paralelo por vários processos, com cada processo trabalhando em sua própria parte do arquivo, então pode ser útil dividir o arquivo em um número de segmentos igual ao número de processos, ou um múltiplo do número de processos.</p>
-<p>Para obter o máximo desempenho, as solicitações de E/S devem ser alinhadas às faixas, o que significa que os processos que acessam o arquivo devem fazê-lo em deslocamentos que correspondam aos limites das faixas. Isto minimiza as chances de um processo ter que acessar mais de um segmento (e mais de um OST) para obter os dados necessários.</p>
-<p>Para arquivos pequenos, a distribuição (striping) deve ser desabilitada, isso pode ser conseguido definindo uma contagem de distribuição de 1. O mesmo se aplica se um arquivo grande for acessado por um único processo.</p>
-<p><code>lfs setstripe -s 1m -c 1 meudiretorio/arquivospequenos/</code> </p>
-<h4 id="evite-instalar-software-no-lustre">Evite instalar software no Lustre<a class="headerlink" href="#evite-instalar-software-no-lustre" title="Permanent link">&para;</a></h4>
-<p>Um software geralmente é composto de muitos arquivos pequenos e, como mencionado anteriormente, acessar muitos arquivos pequenos no Lustre pode sobrecarregar os servidores de metadados. As compilações de software em particular podem ser melhor executadas localmente copiando ou descompactando o software para /tmp/$USER/ o para o seu <code>homedir</code>.</p>
-<p>Além disso, sob alta carga, o acesso de E/S aos sistemas de arquivos Lustre pode ser bloqueado. Se os executáveis ​​forem armazenados no Lustre e o acesso ao sistema de arquivos falhar, os executáveis ​​poderão travar. Portanto, sempre que possível, é melhor copiar os executáveis ​​para o <code>/tmp</code> dos nós do cluster.</p>
-<h3 id="quota">Quota<a class="headerlink" href="#quota" title="Permanent link">&para;</a></h3>
+<h1 id="hpe-apollo-2000">HPE Apollo 2000<a class="headerlink" href="#hpe-apollo-2000" title="Permanent link">&para;</a></h1>
+<p>O <strong>Cluster Apollo</strong> possui 28 nós computacionais e oferece um total de <strong>1072 cores</strong> físicos. Seus nós são equipados com processadores <code>Intel Xeon Skylake 5120, 14-cores, 2.2GHz</code> (apl01-14) e <code>Intel(R) Xeon(R) Gold 5320 CPU @ 2.20GHz</code> (apl15-26) com o sistema de <em>hyperthreading</em> ativado. O conjunto de máquinas provê cerca de 80 Tflops de capacidade computacional. </p>
+<p>Os 28 nós computacionais do Cluster Apollo são da família de servidores HPE ProLiant, sendo 16 do modelo XL170r e 12 do modelo XL220n. Atualmente, o número de cores disponíveis é de 2144 devido o <em>hyper-threading</em> estar ativo nos nós de computação.</p>
+<h4 id="caracteristicas-atuais">Características atuais<a class="headerlink" href="#caracteristicas-atuais" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
-<th>area</th>
-<th>TB</th>
-<th>bsoft</th>
-<th>bhard</th>
-<th>isoft</th>
-<th>ihard</th>
-<th>grace period</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>T0</td>
-<td>70</td>
-<td>0.4 TB</td>
-<td>0.5 TB</td>
-<td>10000</td>
-<td>11000</td>
-<td>7 days</td>
-</tr>
-</tbody>
-</table>
-<h3 id="area-de-scratch">Área de scratch<a class="headerlink" href="#area-de-scratch" title="Permanent link">&para;</a></h3>
-<p>Os arquivos que não foram modificados nos últimos 60 dias serão automaticamente removidos.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Essa área NÃO sofrerá backup e também NÃO será enviado aviso de remoção de arquivos!</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>O script de limpeza é executado uma vez por semana sempre nos fins de semana.  </p>
-</div>
-<h3 id="comandos-uteis">Comandos úteis<a class="headerlink" href="#comandos-uteis" title="Permanent link">&para;</a></h3>
-<p>a) Como acessar a minha área de scratch?</p>
-<div class="codehilite"><pre><span></span><code>cd $SCRATCH
-</code></pre></div>
-
-<p>b) Como consultar a minha quota disponível?</p>
-<div class="codehilite"><pre><span></span><code>lfs quota -u $USER /lustre/t0
-</code></pre></div>
-
-<p>c) Como consultar os meus arquivos criados há <em>mais</em> de 60 dias? </p>
-<div class="codehilite"><pre><span></span><code>lfs find $SCRATCH --uid $UID -mtime +60 --print
-</code></pre></div>
-
-<p>c) Como consultar os meus arquivos criados há <em>menos</em> de 60 dias? </p>
-<div class="codehilite"><pre><span></span><code>lfs find $SCRATCH --uid $UID -mtime -60 --print
-</code></pre></div>
-
-<p>d) Como listar os OSTs do Lustre?</p>
-<div class="codehilite"><pre><span></span><code>lfs osts /lustre/t0
-</code></pre></div>
-
-<p>e) Como listar os arquivos armazenados há mais de 60 dias em um determinado OST do Lustre?</p>
-<div class="codehilite"><pre><span></span><code>lfs find $SCRATCH -mtime +60 --print --obd t0-OST0002_UUID
-</code></pre></div>
-
-<p>f) Como configurar o striping em diretório de modo a "quebrar" os arquivos e distribuir esses "pedaços" em 10 OSTs?</p>
-<div class="codehilite"><pre><span></span><code>lfs setstripe -c 10 $SCRATCH/meus_arquivos_grandes
-</code></pre></div>
-
-<p>g) Como consultar o striping de arquivos/diretórios?</p>
-<div class="codehilite"><pre><span></span><code>lfs setstripe -c $SCRATCH/meus_arquivos_grandes
-</code></pre></div>
-
-<h3 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h3>
-<p>Estas melhores práticas foram compiladas a partir da experiência do time do LIneA e das seguintes fontes:</p>
-<ol>
-<li><a href="https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html">https://www.nas.nasa.gov/hecc/support/kb/lustre-best-practices_226.html</a></li>
-<li><a href="https://hpcf.umbc.edu/general-productivity/lustre-best-practices/">https://hpcf.umbc.edu/general-productivity/lustre-best-practices/</a></li>
-<li><a href="https://wiki.gsi.de/foswiki/bin/view/Linux/LustreFs">https://wiki.gsi.de/foswiki/bin/view/Linux/LustreFs</a></li>
-<li><a href="https://doc.lustre.org/lustre_manual.pdf">https://doc.lustre.org/lustre_manual.pdf</a></li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>O Lustre do LIneA foi projetado para trabalhar a 100Gbps, para alcançar o máximo de performance faça uso do striping e sempre com arquivos grandes (+1GB).</p>
-</div>
-<h2 id="nas-nfs">NAS (NFS)<a class="headerlink" href="#nas-nfs" title="Permanent link">&para;</a></h2>
-<p>Os sistemas de armazenamento NAS são utilizados para armazenamento de longo prazo e não estão acessíveis através dos nós de processamento (HPC).</p>
-<p>Características atuais: </p>
-<table>
-<thead>
-<tr>
-<th>Fabricante</th>
-<th>Modelo</th>
-<th>Capacidade</th>
+<th># Nodes</th>
+<th># Cores</th>
+<th>Total de ram</th>
 <th>Instalado em</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>SGI</td>
-<td>IS5500<sup>[1]</sup></td>
-<td>540TB</td>
-<td>Dez-2011</td>
+<td>16<sup>[1]</sup></td>
+<td>448</td>
+<td>2TB</td>
+<td>Abr-2019</td>
 </tr>
 <tr>
-<td>SGI</td>
-<td>IS5600</td>
-<td>240TB</td>
-<td>Jul-2014</td>
+<td>12</td>
+<td>624</td>
+<td>3TB</td>
+<td>Jul-2023</td>
 </tr>
 </tbody>
 </table>
-<p><sup>[1]</sup> <em>este equipamento foi desativado em Jun/2023 devido a problemas físicos.</em></p>
-<h3 id="home">/home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h3>
-<p>O diretório <code>home</code> é uma área para os usuários armazenarem seus arquivos pessoais e é acessível através dos nós de login do cluster e também na plataforma <a href=".">jupyter</a>.</p>
-<h3 id="archive">/archive<a class="headerlink" href="#archive" title="Permanent link">&para;</a></h3>
-<p>Área de armazenamento de dados brutos de catálogos astronômicos transferidos a partir de outros centros de dados ou produzidos internamente pelas diversas plataformas desenvolvidas pelo LIneA.</p>
-<h3 id="process">/process<a class="headerlink" href="#process" title="Permanent link">&para;</a></h3>
-<p>Área de armazenamento de dados provenientes do processamento de dados do DES realizados pelo <a href="https://des-portal.linea.org.br">Portal do DES</a>.</p>
-<h3 id="quota_1">Quota<a class="headerlink" href="#quota_1" title="Permanent link">&para;</a></h3>
+<p><sup>[1]</sup> <em>atualmente 2 nós estão sendo usados como máquinas de serviço do cluster</em>.</p>
+<p>O <strong>Cluster Apollo</strong> é gerenciado pelo <strong>Slurm version 18.08.8</strong>.</p>
+<h2 id="acesso-ao-no-de-submissao">Acesso ao nó de submissão<a class="headerlink" href="#acesso-ao-no-de-submissao" title="Permanent link">&para;</a></h2>
+<p>O acesso ao host de submissão é feito por chave <code>ssh</code> e é necessário que você possua uma conta válida no LIneA. Depois de se registrar como usuário do LIneA (<a href="https://docs.linea.org.br/primeiros_passos.html#registro-de-usuarios">detalhes aqui</a>) e receber o e-mail de confirmação, é necessário entrar em contato com o Service Desk através do e-mail <a href="mailto:helpdesk@linea.org.br">helpdesk@linea.org.br</a> para receber orientações de como acessar o nó de submissão para executar tarefas no cluster.</p>
+<h2 id="slurm">Slurm<a class="headerlink" href="#slurm" title="Permanent link">&para;</a></h2>
+<p>Slurm é um sistema de gerenciamento de cluster e agendamento de tarefas de código aberto, tolerante a falhas e altamente escalonável para clusters Linux grandes e pequenos. Slurm não requer modificações no kernel para sua operação e é relativamente independente. Como gerenciador de carga de trabalho de cluster, o Slurm tem três funções principais: </p>
+<ul>
+<li>alocar acesso exclusivo e/ou não exclusivo aos recursos (nós de computação) aos usuários por um determinado período de tempo para que possam realizar o trabalho. </li>
+<li>oferecer uma estrutura para iniciar, executar e monitorar o trabalho (normalmente um trabalho paralelo) no conjunto de nós alocados.</li>
+<li>gerenciar a fila de submissão, arbitrando conflitos entre os pedidos de recursos computacionais.</li>
+</ul>
+<h3 id="filesystem">Filesystem<a class="headerlink" href="#filesystem" title="Permanent link">&para;</a></h3>
+<p>O <strong>Cluster Apollo</strong> conta com um Filesystem Lustre, utilizado como "Scratch".
+O "Home" dos usuários (acessível apenas no nó de login), é fornecido através de NFS.</p>
+<p>Essas áreas de armazenamento devem ser utilizadas da seguinte forma:</p>
+<p>Scratch : Estrutura montada a partir do diretório /lustre/t0/scratch/users/<username>. Utilizado para armazenar todos os arquivos que serão utilizados durante a execução de um job (scripts de submissão, executáveis, dados de entrada, dados de saída etc).</p>
+<p>Home : Estrutura montada a partir do diretório /home/<username>. Utilizado para armazenar especialmente os resultados que se queira manter durante toda a vigência do projeto.</p>
+<p><a href="../armazenamento/index.html">Clique aqui para mais detalhes</a></p>
+<div class="admonition atenção">
+<p class="admonition-title">Atenção</p>
+<p>Não esqueça de copiar os arquivos necessários (executável, bibliotecas, dados de entrada) para dentro da área de SCRATCH, pois a área de HOMEDIR não é acessível pelos nós computacionais.</p>
+</div>
+<h3 id="particoes-disponiveis">Partições disponíveis<a class="headerlink" href="#particoes-disponiveis" title="Permanent link">&para;</a></h3>
+<p>O cluster Apollo é organizado em diferentes partições (subconjunto de máquinas) para atender a diferentes necessidades, por exemplo, a garantia da prioridade máxima dos usuários do projeto LSST na utilização das máquinas dedicadas ao IDAC-Brasil. </p>
 <table>
 <thead>
 <tr>
-<th>area</th>
-<th>bsoft</th>
-<th>bhard</th>
-<th>isoft</th>
-<th>ihard</th>
-<th>grace period</th>
+<th>PARTITION</th>
+<th>TIMELIMIT</th>
+<th>NODES</th>
+<th>NODELIST</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>/home</td>
-<td>10 GB</td>
-<td>15 GB</td>
-<td>1000</td>
-<td>1100</td>
-<td>7 days</td>
+<td>cpu_dev</td>
+<td>30:00</td>
+<td>26</td>
+<td>apl[01-26]</td>
+</tr>
+<tr>
+<td>cpu_small</td>
+<td>3-00:00:00</td>
+<td>26</td>
+<td>apl[01-26]</td>
+</tr>
+<tr>
+<td>cpu</td>
+<td>5-00:00:00</td>
+<td>26</td>
+<td>apl[01-26]</td>
+</tr>
+<tr>
+<td>cpu_long</td>
+<td>31-00:00:0</td>
+<td>26</td>
+<td>apl[01-26]</td>
+</tr>
+<tr>
+<td>LSST</td>
+<td>infinite</td>
+<td>12</td>
+<td>apl[15-26]</td>
 </tr>
 </tbody>
 </table>
-<h2 id="backup">Backup<a class="headerlink" href="#backup" title="Permanent link">&para;</a></h2>
+<h3 id="accounts-disponiveis">Accounts disponíveis<a class="headerlink" href="#accounts-disponiveis" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Workflow</strong> – Interrompe qualquer job que esteja rodando: <strong>hpc-photoz</strong> (photoz)</li>
+<li><strong>LSST</strong> – Próximo da fila: <strong>hpc-lsst</strong> [somente nas novas apollos apl[15-26]] (lsst)</li>
+<li><strong>Grupo A</strong> - Prioridade Maior: <strong>hpc-bpglsst</strong> (itteam, bpg-lsst)</li>
+<li><strong>Grupo B</strong> - Prioridade Intermediária: <strong>hpc-collab</strong> (des, desi, sdss, tno)</li>
+<li><strong>Grupo C</strong> - Prioridade Menor: <strong>hpc-public</strong> (linea-members)</li>
+</ul>
+<p>As partições (<strong>cpu_dev</strong>, <strong>cpu_small</strong>, <strong>cpu</strong> e <strong>cpu_long</strong>) possuem todas as apollos (<em>apl[01-26]</em>), enquanto a partição LSST possui apenas as <em>apl[15-26]</em>. Porém, somente o account <em>hpc-lsst</em> poderá submeter jobs nessa partição (<strong>LSST</strong>), que possui prioridade maior nesses nodes.</p>
+<div class="admonition atenção">
+<p class="admonition-title">Atenção</p>
+<p>Como parte do programa de conrtribuição in-kind BRA-LIN, o IDAC Brasil possui o compromisso de gerar <em>redshifts</em> fotométricos anualmente para o levantamento LSST, sempre na época que antecede as liberações oficiais dos dados. Nestes períodos, o Cluster Apollo será totalmente ocupado para este propósito por um tempo estimado de algumas horas, mas podendo se estender a alguns dias. Na ocasião, os usuários serão informados com antecência sobre a indisponibilidade do cluster por e-mail. <a href="https://linea-it.github.io/pz-lsst-inkind-doc/">Clique aqui</a> para saber mais sobre a produção de medidas de <em>redshift</em> e o programa de conrtribuição in-kind BRA-LIN. </p>
+</div>
+<h3 id="anatomia-de-um-job">Anatomia de um Job<a class="headerlink" href="#anatomia-de-um-job" title="Permanent link">&para;</a></h3>
+<p>Um Job solicita recursos de computação e especifica os aplicativos a serem iniciados nesses recursos, juntamente com quaisquer dados/opções de entrada e diretivas de saída. O usuário envia a tarefa, geralmente na forma de um script de tarefa em lote, ao agendador em lote.
+O script de tarefa em lote é composto por quatro componentes principais:</p>
+<ul>
+<li>O intérprete usado para executar o script</li>
+<li>Diretivas “#” que transmitem opções de envio padrão.</li>
+<li>A configuração de variáveis de ambiente e/ou script (se necessário)</li>
+<li>Os aplicativos a serem executados junto com seus argumentos e opções de entrada.</li>
+</ul>
+<p>Aqui está um exemplo de um script em lote que solicita 3 nós na partição "cpu" e inicia 36 tarefas do myApp nos 3 nós alocados:</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1">#SBATCH -N 3</span>
+<span class="c1">#SBATCH -p cpu</span>
+<span class="c1">#SBATCH --ntasks 36</span>
+
+srun myApp
+</code></pre></div>
+<p>Quando a tarefa estiver agendada para execução, o gerenciador de recursos executará o script da tarefa em lote no primeiro nó da alocação.</p>
+<h4 id="executando-um-job">Executando um Job<a class="headerlink" href="#executando-um-job" title="Permanent link">&para;</a></h4>
+<p>Após ter construído o script de execução com todas basta chama-lo utilizando o comando sbatch como mostra o exemplo abaixo:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>usuario@loginapl01<span class="o">]</span>$ sbatch myscript.slurm
+</code></pre></div>
+<p>Se o script estiver correto haverá uma saída que indica o ID do job. Por exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>usuario@loginapl01<span class="o">]</span>$ sbatch myscript.slurm
+Submitted batch job <span class="m">510</span>
+</code></pre></div>
+<h4 id="andamento-do-job">Andamento do Job<a class="headerlink" href="#andamento-do-job" title="Permanent link">&para;</a></h4>
+<p>A maioria das especificações de um job pode ser vista através do comando <code>scontrol show job &lt;JobID&gt;</code>. Mais detalhes sobre o trabalho, incluindo o script do trabalho, podem ser vistos adicionando o sinalizador <code>-d</code>. Um usuário não consegue ver o script do trabalho de outro usuário.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>usuario@loginapl01<span class="o">]</span>$ scontrol show job <span class="m">510</span>  
+</code></pre></div>
+<p>O Slurm captura e relata o código de saída do script do job (tarefas sbatch), bem como o sinal que causou o término da execução.</p>
+<h4 id="cancelando-um-job">Cancelando um Job<a class="headerlink" href="#cancelando-um-job" title="Permanent link">&para;</a></h4>
+<p>Se seu Job estiver em execução ou aguardando na fila, você poderá cancelar o trabalho usando o comando <code>scancel &lt;JobId&gt;</code>. Use o comando squeue se você não souber o ID do Job. Por exemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>usuario@loginapl01<span class="o">]</span>$ scancel <span class="m">510</span>
+</code></pre></div>
+<h4 id="especificando-recursos">Especificando Recursos<a class="headerlink" href="#especificando-recursos" title="Permanent link">&para;</a></h4>
+<p>O Slurm tem sua própria sintaxe para solicitar recursos de computação. Abaixo está uma tabela de resumo de alguns recursos solicitados com frequência e a sintaxe de Slurm para obtê-los. Para obter uma lista completa da sintaxe, execute o comando man sbatch.</p>
 <table>
 <thead>
 <tr>
-<th>áreas</th>
-<th>frequência</th>
-<th>tipo</th>
-<th>retenção</th>
+<th>Sintaxe</th>
+<th>Significado</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>/home</td>
-<td>diário</td>
-<td>incremental</td>
-<td>90 dias</td>
+<td>#SBATCH -p partition</td>
+<td>Define a partição em que o job será executado</td>
 </tr>
 <tr>
-<td>/home</td>
-<td>mensal</td>
-<td>completo</td>
-<td>90 dias</td>
+<td>#SBATCH -J job_name</td>
+<td>Define o nome do Job</td>
 </tr>
 <tr>
-<td>/archive</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
+<td>#SBATCH -n quantidade</td>
+<td>Define o número total de tarefas da CPU.</td>
 </tr>
 <tr>
-<td>/process</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>/scratch</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
+<td>#SBATCH -N quantidade</td>
+<td>Define o número de nós de computação solicitados.</td>
 </tr>
 </tbody>
 </table>
+<h4 id="comandos-basicos-do-slurm">Comandos Básicos do Slurm<a class="headerlink" href="#comandos-basicos-do-slurm" title="Permanent link">&para;</a></h4>
+<p>Para aprender sobre todas as opções disponíveis para cada comando, insira man <comando> enquanto estiver conectado ao ambiente do Cluster.</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sbatch</td>
+<td>Envia scripts de tarefas para a fila de execução</td>
+</tr>
+<tr>
+<td>scancel</td>
+<td>Cancela um job</td>
+</tr>
+<tr>
+<td>scontrol</td>
+<td>Usado para exibir o estado Slurm (várias opções disponíveis apenas para root)</td>
+</tr>
+<tr>
+<td>sinfo</td>
+<td>Exibir estado de partições e nós</td>
+</tr>
+<tr>
+<td>squeue</td>
+<td>Exibir estado dos jobs</td>
+</tr>
+<tr>
+<td>salloc</td>
+<td>Envia um job para execução ou inicia um trabalho em tempo real</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ambiente-de-execucao">Ambiente de Execução<a class="headerlink" href="#ambiente-de-execucao" title="Permanent link">&para;</a></h4>
+<p>Para cada tipo de trabalho acima, o usuário tem a capacidade de definir o ambiente de execução. Isso inclui definições de variáveis de ambiente, bem como limites de shell (<code>bash ulimit</code> ou <code>csh limit</code>). <strong>sbatch</strong> e <strong>salloc</strong> fornecem a opção <code>--export</code> para transmitir variáveis de ambiente específicas para o ambiente de execução. E também tem a opção <code>--propagate</code> para transmitir limites específicos do shell ao ambiente de execução.</p>
+<h4 id="variaveis-de-ambiente">Variáveis de ​​ambiente<a class="headerlink" href="#variaveis-de-ambiente" title="Permanent link">&para;</a></h4>
+<p>A primeira categoria de variáveis de ambiente são aquelas que o Slurm insere no ambiente de execução do trabalho. Eles transmitem ao script da tarefa e informações do aplicativo, como ID da tarefa <code>(SLURM_JOB_ID)</code> e ID da tarefa <code>(SLURM_PROCID)</code>. Para obter a lista completa, consulte a seção <code>"OUTPUT ENVIRONMENT VARIABLES"</code> nas páginas <a href="https://slurm.schedmd.com/sbatch.html">sbatch</a>, <a href="https://slurm.schedmd.com/salloc.html">salloc</a> e <a href="https://slurm.schedmd.com/srun.html">srun</a>.</p>
+<p>A próxima categoria de variáveis de ambiente são aquelas que o usuário pode definir em seu ambiente para transmitir opções padrão para cada trabalho enviado. Isso inclui opções como o limite do relógio de parede. Para obter a lista completa, consulte a seção <code>"INPUT ENVIRONMENT VARIABLES"</code> nas páginas <a href="https://slurm.schedmd.com/sbatch.html">sbatch</a>, <a href="https://slurm.schedmd.com/salloc.html">salloc</a> e <a href="https://slurm.schedmd.com/srun.html">srun</a>.</p>
+<h3 id="gerenciamento-de-pacotes-eups">Gerenciamento de pacotes (EUPS)<a class="headerlink" href="#gerenciamento-de-pacotes-eups" title="Permanent link">&para;</a></h3>
+<p>O <a href="https://github.com/RobertLuptonTheGood/eups">EUPS</a> é um gerenciador de pacotes alternativo (e oficial do LSST) que permite carregar variáveis de ambiente e incluir o caminho para programas e bibliotecas de forma modular:</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Esses comandos deverão ser executados dentro do ambiente LIneA.</p>
+</div>
+<ul>
+<li>
+<p>Para carregar o EUPS:
+<div class="highlight"><pre><span></span><code>. /mnt/eups/linea_eups_setup.sh
+</code></pre></div></p>
+</li>
+<li>
+<p>Listar todos os pacotes disponíveis:
+<div class="highlight"><pre><span></span><code>eups list 
+</code></pre></div></p>
+</li>
+<li>
+<p>Carregar um pacote na sessão atual:
+<div class="highlight"><pre><span></span><code>setup scipy <span class="m">0</span>.11.0+2
+</code></pre></div></p>
+</li>
+<li>
+<p>Remover um pacote da sessão atual:
+<div class="highlight"><pre><span></span><code>unsetup scipy <span class="m">0</span>.11.0+2
+</code></pre></div></p>
+</li>
+</ul>
 
 
 
